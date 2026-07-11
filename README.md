@@ -378,11 +378,11 @@ Specialization in Data Analytics
 
 ### Connect with Me
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/Jriv7929
 
-LinkedIn: https://linkedin.com/in/YOUR_PROFILE
+LinkedIn: https://linkedin.com/in/Jonathanrivera
 
-Portfolio: https://YOUR_PORTFOLIO
+Portfolio: https://
 
 ---
 
