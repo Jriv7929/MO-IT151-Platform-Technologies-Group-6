@@ -1,268 +1,289 @@
-# FinMark Resilient Data Pipeline
+# 📊 FinMark Data Analytics Pipeline
 
-> A production-inspired Python data pipeline for processing, validating, cleaning, analyzing, and visualizing business data with built-in data quality monitoring, performance analytics, and fault tolerance.
+> An end-to-end data analytics pipeline that ingests raw business data, validates and transforms it, performs business analytics, monitors data quality, and presents insights through an interactive executive dashboard.
 
----
-
-## Project Overview
-
-The **FinMark Resilient Data Pipeline** is a Python-based prototype developed for the Data Analytics Track. It demonstrates how raw business datasets can be transformed into reliable analytical outputs through a structured Extract-Transform-Load (ETL) workflow.
-
-Unlike a basic ETL pipeline, this project emphasizes **data quality**, **pipeline resilience**, and **performance monitoring**. The pipeline is capable of detecting missing or corrupted business columns, applying business-rule-based recovery, generating data quality reports, measuring execution time for every pipeline stage, and preparing datasets for dashboarding and future forecasting.
-
-This project was developed as part of the FinMark case study and follows the scalable architecture proposed during Milestone 1 while extending the implementation completed in Milestone 2.
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B)
+![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ---
 
-# Features
+# 📖 Overview
 
-## Data Ingestion
+FinMark Data Analytics Pipeline is a simulated enterprise-grade data engineering and business analytics project developed using Python.
 
-- Reads multiple business datasets
-- Validates file availability
-- Supports structured CSV ingestion
-- Logs ingestion status
+The project demonstrates how raw business data flows through a complete analytics pipeline—from ingestion and validation to executive reporting and interactive dashboard visualization.
 
----
-
-## Schema Validation
-
-- Required column verification
-- Missing column detection
-- Data type validation
-- Corrupted value detection
-- Validation logging
+Rather than focusing on a single machine learning model or dashboard, this project emphasizes the complete analytics lifecycle used by modern organizations.
 
 ---
 
-## Data Quality Monitoring
+# 🎯 Project Objectives
 
-- Missing value analysis
-- Duplicate detection
-- Invalid record detection
-- Data completeness scoring
-- Data quality reporting
-
----
-
-## Business Rule Engine
-
-Instead of blindly replacing missing values with zero, the pipeline applies business-aware rules:
-
-- Retains valid null values for behavioral events
-- Repairs recoverable missing columns
-- Flags corrupted transaction data
-- Supports future quarantine processing
+- Build a modular ETL (Extract, Transform, Load) pipeline
+- Validate incoming business datasets
+- Detect and handle poor-quality data
+- Apply automated cleaning and transformation
+- Generate business KPIs
+- Monitor pipeline health
+- Produce executive-ready analytics
+- Visualize insights using Streamlit
 
 ---
 
-## Data Cleaning
-
-- Duplicate removal
-- Standardization
-- Null value handling
-- Invalid record management
-
----
-
-## Data Transformation
-
-Creates additional analytical features including:
-
-- Event Date
-- Event Hour
-- Week Start Date
-- Daily summaries
-- Monthly summaries
-
----
-
-## Analytics
-
-Generates business KPIs such as:
-
-- Total Sales
-- Total Events
-- Unique Users
-- Average Active Users
-- Sales Growth Rate
-- Customer Metrics
-
----
-
-## Pipeline Performance Monitoring
-
-Measures execution time for every pipeline stage.
-
-Example:
+# 🏗 System Architecture
 
 ```
-Ingestion
-Validation
-Cleaning
-Transformation
-Storage
-Analytics
-Dashboard
-```
-
-The pipeline identifies performance bottlenecks for future optimization.
-
----
-
-## Dashboard
-
-The pipeline generates a management dashboard containing:
-
-- Sales Trends
-- Business KPIs
-- Event Distribution
-- Pipeline Performance
-- Data Quality Metrics
-
-Designed to support future Power BI integration.
-
----
-
-## Fault Tolerance
-
-The pipeline is designed to continue operating when recoverable issues occur.
-
-Examples include:
-
-- Missing columns
-- Corrupted values
-- Invalid numeric fields
-- Missing datasets (future enhancement)
-
----
-
-# Pipeline Architecture
-
-```
-                Raw Data Sources
-                       │
-                       ▼
-               Data Ingestion
-                       │
-                       ▼
-             Schema Validation
-                       │
-                       ▼
-         Data Quality Assessment
-                       │
-                       ▼
-        Business Rule Engine
-                       │
-                       ▼
-              Data Cleaning
-                       │
-                       ▼
-            Data Transformation
-                       │
-                       ▼
-              Initial Storage
-                       │
-                       ▼
-         Analytics & KPI Generation
-                       │
-                       ▼
-          Dashboard & Reporting
-```
-
----
-
-# Project Structure
-
-```
-FinMark_DataPipeline/
-
-│
-├── main.py
-├── config.py
-├── ingestion.py
-├── validation.py
-├── profiling.py
-├── fallback.py
-├── cleaning.py
-├── transformation.py
-├── storage.py
-├── analytics.py
-├── forecasting.py
-├── monitoring.py
-├── dashboard.py
-│
-├── data/
-│   ├── raw/
-│   ├── clean/
-│   ├── curated/
-│   └── quarantine/
-│
-├── output/
-│
-├── dashboard/
-│
-├── logs/
-│
-├── notebooks/
-│
-└── README.md
-```
-
----
-
-# Technologies Used
-
-- Python 3.x
-- Pandas
-- NumPy
-- Matplotlib
-- Plotly
-- Jupyter Notebook
-- CSV
-- Power BI (Planned)
-- ARIMA / SARIMA (Planned)
-
----
-
-# Sample Pipeline Flow
-
-```
-Raw CSV Files
+Raw CSV Data
       │
       ▼
+Stage 1
 Data Ingestion
       │
       ▼
-Schema Validation
+Stage 2
+Validation & Profiling
       │
       ▼
-Data Quality Checks
+Stage 3
+Cleaning & Transformation
       │
       ▼
-Cleaning
+Stage 4
+Storage Layer
       │
       ▼
-Transformation
+Stage 5
+Business Analytics
       │
       ▼
-Storage
+Stage 6
+Monitoring & Alerts
       │
       ▼
-Analytics
-      │
-      ▼
-Dashboard
+Stage 7
+Executive Dashboard
 ```
 
 ---
 
-# Running the Project
+# 🚀 Pipeline Stages
+
+## ✅ Stage 1 — Data Ingestion
+
+- Load multiple business datasets
+- Validate file availability
+- Handle missing datasets
+- Standardized dataset loading
+
+Datasets
+
+- Event Logs
+- Marketing Summary
+- Trend Report
+
+---
+
+## ✅ Stage 2 — Validation & Profiling
+
+Features
+
+- Schema validation
+- Missing value analysis
+- Duplicate detection
+- Completeness score
+- Data quality score
+- Dataset profiling
+
+---
+
+## ✅ Stage 3 — Cleaning & Transformation
+
+Features
+
+- Missing value handling
+- Data normalization
+- Type conversion
+- Date conversion
+- Feature engineering
+- Business rule validation
+
+---
+
+## ✅ Stage 4 — Storage Layer
+
+Features
+
+- Curated dataset generation
+- Processed dataset storage
+- CSV export
+- Output versioning
+
+---
+
+## ✅ Stage 5 — Business Analytics
+
+Automatically generates
+
+- Business KPIs
+- Executive Summary
+- Pipeline Health Metrics
+- Power BI Dataset
+
+Example KPIs
+
+- Total Sales
+- Average Daily Sales
+- New Customers
+- Active Users
+- Event Statistics
+- Sales Growth
+- Pipeline Health Score
+
+---
+
+## ✅ Stage 6 — Monitoring & Alerts
+
+Features
+
+- Dashboard Status
+- Pipeline Health
+- Warning Detection
+- Critical Alerts
+- Quarantine Monitoring
+- Executive Notifications
+
+---
+
+## ✅ Stage 7 — Executive Dashboard
+
+Built using
+
+- Streamlit
+- Plotly
+
+Dashboard Pages
+
+- Executive Overview
+- Marketing Performance
+- User Interaction Analytics
+- Weekly Trends
+- Pipeline Monitoring
+
+Interactive Features
+
+- KPI Cards
+- Interactive Charts
+- Date Filters
+- Download CSV
+- Alert Monitoring
+- Executive Summary
+
+---
+
+# 📂 Project Structure
+
+```text
+FinMark_DataPipeline/
+│
+├── dashboard/
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   ├── curated/
+│   ├── quarantine/
+│   └── archive/
+│
+├── docs/
+├── logs/
+├── notebooks/
+├── output/
+├── src/
+├── tests/
+│
+├── README.md
+├── requirements.txt
+└── run_pipeline.py
+```
+
+---
+
+# 📈 Sample Pipeline Outputs
+
+The pipeline automatically generates
+
+```
+business_kpis.csv
+
+pipeline_health_metrics.csv
+
+executive_summary.csv
+
+dashboard_status.csv
+
+dashboard_alerts.csv
+
+powerbi_dashboard_dataset.csv
+```
+
+---
+
+# 📊 Dashboard Preview
+
+> *(Insert screenshots here)*
+
+Example pages
+
+- Executive Overview
+- Marketing Dashboard
+- Weekly Trends
+- Pipeline Monitoring
+
+---
+
+# 🛠 Technologies Used
+
+Programming
+
+- Python 3.11
+
+Data Processing
+
+- Pandas
+- NumPy
+
+Visualization
+
+- Plotly
+- Streamlit
+
+Development Environment
+
+- Jupyter Notebook
+- VS Code
+- Anaconda
+
+Version Control
+
+- Git
+- GitHub
+
+---
+
+# ⚙ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/FinMark_DataPipeline.git
+git clone https://github.com/YOUR_USERNAME/FinMark_DataPipeline.git
+```
+
+Navigate to the project
+
+```bash
+cd FinMark_DataPipeline
 ```
 
 Install dependencies
@@ -271,64 +292,86 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run the pipeline
+---
+
+# ▶ Running the Project
+
+Run the analytics pipeline
 
 ```bash
-python main.py
+python run_pipeline.py
+```
+
+Launch the dashboard
+
+```bash
+streamlit run dashboard/app.py
 ```
 
 ---
 
-# Current Status
+# 📊 Example Dashboard Metrics
 
-| Module | Status |
-|---------|--------|
-| Data Ingestion | ✅ Completed |
-| Schema Validation | ✅ Completed |
-| Data Cleaning | ✅ Completed |
-| Data Transformation | ✅ Completed |
-| Initial Storage | ✅ Completed |
-| Analytics | ✅ Completed |
-| Dashboard | ✅ Completed |
-| Data Quality Monitoring | 🚧 In Progress |
-| Performance Monitoring | 🚧 In Progress |
-| Business Rule Engine | 🚧 In Progress |
-| Forecasting | ⏳ Planned |
-| Power BI Integration | ⏳ Planned |
+The dashboard displays
+
+- Revenue
+- Daily Sales
+- Active Users
+- New Customers
+- Event Frequency
+- Pipeline Health
+- Quality Score
+- Alerts
+- Weekly Trends
 
 ---
 
-# Future Enhancements
+# 📚 Learning Outcomes
 
-- Apache Kafka Integration
-- Azure Data Lake
-- Azure Synapse Analytics
-- Real-Time Streaming
+This project demonstrates practical skills in
+
+- ETL Development
+- Data Engineering
+- Data Cleaning
+- Business Analytics
+- Data Quality Management
+- Dashboard Development
+- Data Visualization
+- Python Programming
+- Modular Software Design
+
+---
+
+# 🔮 Future Improvements
+
+Planned enhancements
+
 - Machine Learning Forecasting
-- SARIMA Forecast Model
-- Power BI Live Dashboard
-- Email Alerting
-- Data Quality Dashboard
-- Pipeline Health Dashboard
+- Customer Segmentation
+- Sales Prediction
+- Automated Scheduling
+- Cloud Deployment
+- REST API Integration
+- Database Support
+- Docker Containerization
 
 ---
 
-# Contributors
+# 👨‍💻 Author
 
 **Jonathan Rivera**
 
-BS Information Technology – Data Analytics Track
+BS Information Technology  
+Specialization in Data Analytics
+
+GitHub:
+> *(Add your GitHub profile here)*
+
+LinkedIn:
+> *(Add your LinkedIn profile here)*
 
 ---
 
-# License
+# 📄 License
 
-This project is intended for academic and educational purposes.
-
----
-
-# Acknowledgements
-
-Developed as part of the **FinMark Data Analytics Case Study** for the Data Analytics Track.
-
-Special thanks to our instructors and mentors for their valuable feedback on improving data quality, pipeline resilience, and performance monitoring.
+This project is intended for educational and portfolio purposes.
