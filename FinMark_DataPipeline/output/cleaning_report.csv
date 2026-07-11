@@ -1,0 +1,4 @@
+dataset,rows_before,rows_after,rows_removed,duplicates_removed,columns_before,columns_after,columns_removed,remaining_missing_values,status
+event_logs,1858,1858,0,0,52,7,45,874,CLEANED
+marketing_summary,100,100,0,0,50,5,45,0,CLEANED
+trend_report,20,20,0,0,50,3,47,0,CLEANED

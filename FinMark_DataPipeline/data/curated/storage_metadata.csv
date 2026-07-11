@@ -1,0 +1,10 @@
+file_name,file_path,row_count,column_count,file_size_bytes,status,storage_zone,dataset
+event_logs_clean.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\clean\event_logs_clean.csv,1858,15,252018,SAVED,CLEAN,event_logs
+marketing_summary_clean.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\clean\marketing_summary_clean.csv,100,9,10438,SAVED,CLEAN,marketing_summary
+trend_report_clean.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\clean\trend_report_clean.csv,20,6,941,SAVED,CLEAN,trend_report
+event_classification_report.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\curated\event_classification_report.csv,15,4,597,SAVED,CURATED,event_classification_report
+daily_activity_summary.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\curated\daily_activity_summary.csv,6,6,278,SAVED,CURATED,daily_activity_summary
+event_type_summary.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\curated\event_type_summary.csv,8,7,622,SAVED,CURATED,event_type_summary
+daily_sales_summary.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\curated\daily_sales_summary.csv,100,5,4587,SAVED,CURATED,daily_sales_summary
+monthly_sales_summary.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\curated\monthly_sales_summary.csv,4,6,324,SAVED,CURATED,monthly_sales_summary
+event_logs_quarantine.csv,C:\Users\SCHOOL\Desktop\FinMark_DataPipeline\data\quarantine\event_logs_quarantine.csv,142,53,36055,SAVED,QUARANTINE,event_logs

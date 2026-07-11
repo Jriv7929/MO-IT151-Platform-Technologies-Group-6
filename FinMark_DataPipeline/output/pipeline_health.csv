@@ -1,0 +1,9 @@
+metric,value,unit
+Adjusted Completeness,100.0,percent
+Event Row Retention,92.9,percent
+Validation Score,85.0,percent
+Storage Success Rate,100.0,percent
+Quarantined Rows,142.0,rows
+Validation Warnings,3.0,warnings
+Validation Errors,0.0,errors
+Pipeline Health Score,95.22,score out of 100

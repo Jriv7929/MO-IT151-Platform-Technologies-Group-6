@@ -1,0 +1,31 @@
+category,metric,value,unit,source,status,description,report_type
+Financial,Total Sales,5767580.45,currency,marketing_summary,AVAILABLE,Total sales across all available reporting days.,BUSINESS_KPI
+Financial,Average Daily Sales,57675.8,currency,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Median Daily Sales,59673.74,currency,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Highest Daily Sales,89585.41,currency,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Lowest Daily Sales,20780.11,currency,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Customer,Average Active Users,273.31,users,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Customer,Total New Customers,765,customers,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Average Sales per Active User,281.11,currency per user,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Best Sales Date,2023-07-09,date,marketing_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Best Performing Month,2023-06,month,monthly_sales_summary,AVAILABLE,,BUSINESS_KPI
+Financial,Best Month Sales,1817938.89,currency,monthly_sales_summary,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Processed Events,1858,events,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Unique Users,399,users,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Behavioral Events,1740,events,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Valid Transaction Events,118,events,event_logs_clean,AVAILABLE,Transaction events remaining after quarantine.,BUSINESS_KPI
+Customer Activity,Peak-Hour Events,1063,events,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Peak-Hour Event Percentage,57.21,percent,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Most Frequent Event Type,login,event type,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Customer Activity,Most Frequent Event Count,276,events,event_logs_clean,AVAILABLE,,BUSINESS_KPI
+Pipeline Health,Pipeline Health Score,95.22,score out of 100,pipeline_health,AVAILABLE,,BUSINESS_KPI
+Data Quality,Adjusted Completeness,100.0,percent,pipeline_health,AVAILABLE,,BUSINESS_KPI
+Data Quality,Quarantined Records,142,rows,quarantine_zone,AVAILABLE,,BUSINESS_KPI
+Pipeline Health,Adjusted Completeness,100.0,percent,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Event Row Retention,92.9,percent,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Validation Score,85.0,percent,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Storage Success Rate,100.0,percent,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Quarantined Rows,142.0,rows,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Validation Warnings,3.0,warnings,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Validation Errors,0.0,errors,pipeline_monitor,AVAILABLE,,HEALTH_METRIC
+Pipeline Health,Pipeline Health Score,95.22,score out of 100,pipeline_monitor,AVAILABLE,,HEALTH_METRIC

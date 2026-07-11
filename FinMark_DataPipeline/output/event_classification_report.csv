@@ -1,0 +1,16 @@
+event_type,event_category,amount_status,record_count
+login,behavioral,not_applicable,142
+add_to_cart,behavioral,not_applicable,138
+wishlist_add,behavioral,valid,138
+login,behavioral,valid,134
+search,behavioral,not_applicable,133
+profile_update,behavioral,valid,131
+profile_update,behavioral,not_applicable,124
+page_view,behavioral,valid,122
+wishlist_add,behavioral,not_applicable,122
+checkout,transaction,valid,118
+search,behavioral,valid,118
+add_to_cart,behavioral,valid,114
+page_view,behavioral,not_applicable,111
+logout,behavioral,valid,109
+logout,behavioral,not_applicable,104

@@ -1,0 +1,2 @@
+report_generated_at,pipeline_mode,pipeline_health_status,pipeline_health_score,total_sales,average_daily_sales,total_new_customers,average_active_users,processed_events,quarantined_records,financial_kpis_enabled,executive_message
+2026-07-12T02:59:49.947531,DEGRADED,CRITICAL,69.61,5767580.45,57675.8,765,273.31,2000,142,False,Pipeline completed successfully with controlled fallback actions.

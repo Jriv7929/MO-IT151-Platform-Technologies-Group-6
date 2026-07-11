@@ -1,0 +1,23 @@
+category,metric,value,unit,source_dataset,status,description
+Customer Activity,Processed Events,2000.0,records,event_logs,AVAILABLE,Total processed event-log records.
+Customer Activity,Unique Users,400.0,users,event_logs,AVAILABLE,Number of distinct users in event logs.
+Customer Activity,Unique Event Types,8.0,event types,event_logs,AVAILABLE,
+Customer Activity,Active Event Days,0.0,days,event_logs,AVAILABLE,
+Customer Activity,Average Events Per Day,0.0,events/day,event_logs,AVAILABLE,
+Customer Activity,Average Events Per User,5.0,events/user,event_logs,AVAILABLE,
+Financial Performance,Event Log Transaction Value,0.0,currency,event_logs,DISABLED,Disabled because transaction data exceeded the accepted missing-value threshold.
+Financial Performance,Average Event Transaction Value,0.0,currency,event_logs,DISABLED,
+Financial Performance,Event Transaction Count,0.0,transactions,event_logs,DISABLED,
+Sales Performance,Total Sales,5767580.45,currency,marketing_summary,AVAILABLE,
+Sales Performance,Average Daily Sales,57675.8,currency/day,marketing_summary,AVAILABLE,
+Sales Performance,Highest Daily Sales,89585.41,currency,marketing_summary,AVAILABLE,
+Sales Performance,Lowest Daily Sales,20780.11,currency,marketing_summary,AVAILABLE,
+Customer Growth,Total New Customers,765.0,customers,marketing_summary,AVAILABLE,
+Customer Growth,Average New Customers,7.65,customers/period,marketing_summary,AVAILABLE,
+Customer Activity,Average Active Users,273.31,users,marketing_summary,AVAILABLE,
+Customer Activity,Peak Active Users,497.0,users,marketing_summary,AVAILABLE,
+Sales Performance,Total Transactions,0.0,transactions,marketing_summary,AVAILABLE,
+Marketing Performance,Average Conversion Rate,0.0,percent,marketing_summary,AVAILABLE,
+Trend Analytics,Average Growth Rate,0.05,percent,trend_report,AVAILABLE,
+Trend Analytics,Positive Growth Periods,16.0,periods,trend_report,AVAILABLE,
+Data Quality,Quarantined Records,142.0,records,pipeline,WARNING,Records excluded from selected analytics because they failed validation or fallback rules.

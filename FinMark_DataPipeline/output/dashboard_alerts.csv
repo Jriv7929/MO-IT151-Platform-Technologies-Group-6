@@ -1,0 +1,5 @@
+alert_category,severity,status,message
+Pipeline Health,CRITICAL,UNHEALTHY,Pipeline health score is 69.61. Immediate pipeline investigation is required.
+Data Quality,WARNING,REVIEW REQUIRED,142 records were quarantined and excluded from selected analytics.
+Financial Analytics,WARNING,PARTIALLY DISABLED,Event-log financial KPIs are disabled because the missing transaction amount threshold was exceeded. Marketing sales KPIs remain available.
+Pipeline Mode,WARNING,DEGRADED,The pipeline completed using fallback controls. Review the fallback action report.

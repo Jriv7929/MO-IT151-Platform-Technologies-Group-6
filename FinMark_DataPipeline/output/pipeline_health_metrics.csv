@@ -1,0 +1,11 @@
+category,metric,value,unit,source_dataset,status,description
+Pipeline Health,Pipeline Health Score,69.61,score/100,pipeline,AVAILABLE,
+Pipeline Health,Average Completeness Score,76.81,percent,pipeline,AVAILABLE,
+Pipeline Health,Average Data Quality Score,76.81,percent,pipeline,AVAILABLE,
+Pipeline Health,Total Processed Rows,2120,rows,pipeline,AVAILABLE,
+Pipeline Health,Total Missing Values,28020,values,pipeline,AVAILABLE,
+Pipeline Health,Duplicate Rows,0,rows,pipeline,AVAILABLE,
+Pipeline Health,Pipeline Warning Count,1,warnings,pipeline,AVAILABLE,
+Pipeline Health,Pipeline Error Count,0,errors,pipeline,AVAILABLE,
+Pipeline Health,Pipeline Mode,DEGRADED,status,pipeline,AVAILABLE,
+Pipeline Health,Total Processing Time,0.0,seconds,pipeline,AVAILABLE,

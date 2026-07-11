@@ -1,0 +1,2 @@
+dashboard_status,pipeline_health_score,total_sales,average_daily_sales,average_active_users,total_new_customers,warning_count,critical_count,last_updated
+CRITICAL,69.61,5767580.45,57675.8,273.31,765,3,1,2026-07-12T02:59:50.489567
