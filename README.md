@@ -1,82 +1,132 @@
 # 📊 FinMark Data Analytics Pipeline
 
-> An end-to-end data analytics pipeline that ingests raw business data, validates and transforms it, performs business analytics, monitors data quality, and presents insights through an interactive executive dashboard.
+> **An End-to-End Data Engineering and Business Analytics Platform Built with Python**
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458)
-![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B)
-![Plotly](https://img.shields.io/badge/Plotly-Visualization-3F4F75)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+FinMark Data Analytics Pipeline is a modular analytics platform that demonstrates the complete lifecycle of business data—from ingestion and validation to transformation, business intelligence, monitoring, and interactive dashboard visualization.
+
+The project follows a production-inspired pipeline architecture and showcases modern data engineering practices, automated analytics, and executive reporting using Python, Pandas, Plotly, and Streamlit.
 
 ---
 
-# 📖 Overview
+# 🚀 Project Highlights
 
-FinMark Data Analytics Pipeline is a simulated enterprise-grade data engineering and business analytics project developed using Python.
+✅ End-to-End ETL Pipeline
 
-The project demonstrates how raw business data flows through a complete analytics pipeline—from ingestion and validation to executive reporting and interactive dashboard visualization.
+✅ Automated Data Validation
 
-Rather than focusing on a single machine learning model or dashboard, this project emphasizes the complete analytics lifecycle used by modern organizations.
+✅ Data Cleaning & Transformation
+
+✅ Business KPI Generation
+
+✅ Pipeline Health Monitoring
+
+✅ Executive Dashboard
+
+✅ Interactive Data Visualization
+
+✅ One-Command Pipeline Execution
 
 ---
 
-# 🎯 Project Objectives
+# 📸 Dashboard Preview
 
-- Build a modular ETL (Extract, Transform, Load) pipeline
-- Validate incoming business datasets
-- Detect and handle poor-quality data
-- Apply automated cleaning and transformation
-- Generate business KPIs
-- Monitor pipeline health
-- Produce executive-ready analytics
-- Visualize insights using Streamlit
+> **(Insert screenshots of your dashboard here)**
+
+Suggested screenshots:
+
+- Executive Overview
+- Marketing Performance
+- User Interaction Analytics
+- Weekly Trends
+- Pipeline Monitoring
 
 ---
 
 # 🏗 System Architecture
 
-```
-Raw CSV Data
-      │
-      ▼
-Stage 1
-Data Ingestion
-      │
-      ▼
-Stage 2
-Validation & Profiling
-      │
-      ▼
-Stage 3
-Cleaning & Transformation
-      │
-      ▼
-Stage 4
-Storage Layer
-      │
-      ▼
-Stage 5
-Business Analytics
-      │
-      ▼
-Stage 6
-Monitoring & Alerts
-      │
-      ▼
-Stage 7
-Executive Dashboard
+```text
+                RAW BUSINESS DATA
+                        │
+                        ▼
+            Stage 1 - Data Ingestion
+                        │
+                        ▼
+     Stage 2 - Validation & Profiling
+                        │
+                        ▼
+ Stage 3 - Cleaning & Transformation
+                        │
+                        ▼
+         Stage 4 - Storage Layer
+                        │
+                        ▼
+    Stage 5 - Business Analytics
+                        │
+                        ▼
+ Stage 6 - Monitoring & Alert System
+                        │
+                        ▼
+ Stage 7 - Executive Dashboard (Streamlit)
 ```
 
 ---
 
-# 🚀 Pipeline Stages
+# 📁 Project Structure
 
-## ✅ Stage 1 — Data Ingestion
+```text
+FinMark_DataPipeline/
+│
+├── dashboard/
+│   ├── app.py
+│   ├── components.py
+│   ├── data_loader.py
+│   └── styles.py
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   ├── curated/
+│   ├── quarantine/
+│   └── archive/
+│
+├── docs/
+│
+├── logs/
+│
+├── notebooks/
+│
+├── output/
+│
+├── src/
+│   ├── ingestion.py
+│   ├── validation.py
+│   ├── cleaning.py
+│   ├── transformation.py
+│   ├── storage.py
+│   ├── business_analytics.py
+│   ├── monitoring.py
+│   ├── config.py
+│   └── logger_config.py
+│
+├── tests/
+│
+├── run_pipeline.py
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
 
-- Load multiple business datasets
-- Validate file availability
-- Handle missing datasets
-- Standardized dataset loading
+---
+
+# ⚙ Features
+
+## 📥 Stage 1 — Data Ingestion
+
+- Multi-dataset ingestion
+- Automatic file validation
+- Metadata generation
+- Error handling
+- Logging
 
 Datasets
 
@@ -86,44 +136,36 @@ Datasets
 
 ---
 
-## ✅ Stage 2 — Validation & Profiling
-
-Features
+## 🔍 Stage 2 — Validation & Profiling
 
 - Schema validation
-- Missing value analysis
-- Duplicate detection
-- Completeness score
-- Data quality score
-- Dataset profiling
+- Missing value detection
+- Duplicate analysis
+- Data completeness score
+- Data quality assessment
 
 ---
 
-## ✅ Stage 3 — Cleaning & Transformation
-
-Features
+## 🧹 Stage 3 — Cleaning & Transformation
 
 - Missing value handling
 - Data normalization
 - Type conversion
-- Date conversion
 - Feature engineering
-- Business rule validation
+- Standardized formatting
 
 ---
 
-## ✅ Stage 4 — Storage Layer
+## 💾 Stage 4 — Storage Layer
 
-Features
-
-- Curated dataset generation
-- Processed dataset storage
-- CSV export
-- Output versioning
+- Processed datasets
+- Curated datasets
+- Output management
+- Organized storage
 
 ---
 
-## ✅ Stage 5 — Business Analytics
+## 📈 Stage 5 — Business Analytics
 
 Automatically generates
 
@@ -132,34 +174,33 @@ Automatically generates
 - Pipeline Health Metrics
 - Power BI Dataset
 
-Example KPIs
+Business Metrics
 
 - Total Sales
 - Average Daily Sales
 - New Customers
 - Active Users
 - Event Statistics
-- Sales Growth
+- Weekly Growth
 - Pipeline Health Score
 
 ---
 
-## ✅ Stage 6 — Monitoring & Alerts
+## 🚨 Stage 6 — Monitoring & Alerts
 
 Features
 
-- Dashboard Status
-- Pipeline Health
+- Pipeline Health Monitoring
 - Warning Detection
-- Critical Alerts
-- Quarantine Monitoring
-- Executive Notifications
+- Critical Alert Generation
+- Dashboard Status
+- Executive Monitoring Reports
 
 ---
 
-## ✅ Stage 7 — Executive Dashboard
+## 📊 Stage 7 — Executive Dashboard
 
-Built using
+Built with
 
 - Streamlit
 - Plotly
@@ -176,43 +217,16 @@ Interactive Features
 
 - KPI Cards
 - Interactive Charts
-- Date Filters
+- Filters
 - Download CSV
-- Alert Monitoring
 - Executive Summary
+- Alert Monitoring
 
 ---
 
-# 📂 Project Structure
+# 📊 Generated Outputs
 
-```text
-FinMark_DataPipeline/
-│
-├── dashboard/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   ├── curated/
-│   ├── quarantine/
-│   └── archive/
-│
-├── docs/
-├── logs/
-├── notebooks/
-├── output/
-├── src/
-├── tests/
-│
-├── README.md
-├── requirements.txt
-└── run_pipeline.py
-```
-
----
-
-# 📈 Sample Pipeline Outputs
-
-The pipeline automatically generates
+The pipeline automatically creates
 
 ```
 business_kpis.csv
@@ -221,64 +235,45 @@ pipeline_health_metrics.csv
 
 executive_summary.csv
 
-dashboard_status.csv
-
 dashboard_alerts.csv
+
+dashboard_status.csv
 
 powerbi_dashboard_dataset.csv
 ```
 
 ---
 
-# 📊 Dashboard Preview
+# 🖥 Technology Stack
 
-> *(Insert screenshots here)*
-
-Example pages
-
-- Executive Overview
-- Marketing Dashboard
-- Weekly Trends
-- Pipeline Monitoring
-
----
-
-# 🛠 Technologies Used
-
-Programming
+### Programming Language
 
 - Python 3.11
 
-Data Processing
+### Data Processing
 
 - Pandas
 - NumPy
 
-Visualization
+### Visualization
 
 - Plotly
 - Streamlit
 
-Development Environment
+### Development Environment
 
 - Jupyter Notebook
-- VS Code
 - Anaconda
+- VS Code
 
-Version Control
+### Version Control
 
 - Git
 - GitHub
 
 ---
 
-# ⚙ Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/FinMark_DataPipeline.git
-```
+# ▶ Running the Pipeline
 
 Navigate to the project
 
@@ -286,74 +281,91 @@ Navigate to the project
 cd FinMark_DataPipeline
 ```
 
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# ▶ Running the Project
-
-Run the analytics pipeline
+Run the complete pipeline
 
 ```bash
 python run_pipeline.py
 ```
 
-Launch the dashboard
+Run the pipeline and automatically launch the dashboard
+
+```bash
+python run_pipeline.py --dashboard
+```
+
+---
+
+# 📊 Launch Dashboard Only
 
 ```bash
 streamlit run dashboard/app.py
 ```
 
+The dashboard will be available at
+
+```
+http://localhost:8501
+```
+
 ---
 
-# 📊 Example Dashboard Metrics
+# 📈 Dashboard Features
 
-The dashboard displays
+The executive dashboard provides
 
-- Revenue
-- Daily Sales
-- Active Users
-- New Customers
+- Executive KPI Cards
+- Revenue Analysis
+- Marketing Analytics
+- Customer Growth
 - Event Frequency
-- Pipeline Health
-- Quality Score
-- Alerts
 - Weekly Trends
+- Pipeline Health Monitoring
+- Executive Alerts
+- Interactive Charts
+- CSV Export
 
 ---
 
-# 📚 Learning Outcomes
+# 📚 Skills Demonstrated
 
-This project demonstrates practical skills in
+This project demonstrates practical knowledge of
 
-- ETL Development
 - Data Engineering
+- ETL Development
 - Data Cleaning
-- Business Analytics
-- Data Quality Management
+- Data Validation
+- Data Transformation
+- Business Intelligence
 - Dashboard Development
 - Data Visualization
 - Python Programming
-- Modular Software Design
+- Software Architecture
+- Logging
+- Modular Programming
+- Data Quality Monitoring
 
 ---
 
-# 🔮 Future Improvements
+# 🎯 Future Improvements
 
 Planned enhancements
 
 - Machine Learning Forecasting
+- Predictive Analytics
 - Customer Segmentation
-- Sales Prediction
-- Automated Scheduling
-- Cloud Deployment
 - REST API Integration
-- Database Support
+- SQL Database Support
+- Cloud Deployment
 - Docker Containerization
+- CI/CD Pipeline
+- User Authentication
+- Real-time Data Streaming
+
+---
+
+# 📄 License
+
+This project is released under the MIT License.
 
 ---
 
@@ -361,17 +373,21 @@ Planned enhancements
 
 **Jonathan Rivera**
 
-BS Information Technology  
+Bachelor of Science in Information Technology  
 Specialization in Data Analytics
 
-GitHub:
-> *(Add your GitHub profile here)*
+### Connect with Me
 
-LinkedIn:
-> *(Add your LinkedIn profile here)*
+GitHub: https://github.com/YOUR_USERNAME
+
+LinkedIn: https://linkedin.com/in/YOUR_PROFILE
+
+Portfolio: https://YOUR_PORTFOLIO
 
 ---
 
-# 📄 License
+# ⭐ Acknowledgements
 
-This project is intended for educational and portfolio purposes.
+This project was developed as a comprehensive data engineering and business analytics portfolio project to demonstrate practical skills in building a complete analytics pipeline using Python and modern data visualization tools.
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
